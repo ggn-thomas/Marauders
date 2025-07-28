@@ -1,8 +1,7 @@
 'use client'
 
 import React, { useState } from 'react';
-import Image from 'next/image';
-import { ShoppingCart, Plus, Minus, Star, Truck, Shield, CreditCard, X, ChevronLeft, ChevronRight } from 'lucide-react';
+import { ShoppingCart, Plus, Minus, Truck, Shield, CreditCard, X, ChevronLeft, ChevronRight } from 'lucide-react';
 
 interface Product {
   id: string;
@@ -262,7 +261,7 @@ const BoutiquePage: React.FC = () => {
                 <Truck size={32} />
               </div>
               <h3 className="text-xl font-bold text-black mb-2">Livraison</h3>
-              <p className="text-gray-600">Livraison gratuite dès 50€ d'achat</p>
+              <p className="text-gray-600">Livraison gratuite dès 50€ d&apos;achat</p>
             </div>
             <div className="text-center">
               <div className="bg-[#d71f1c] text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">

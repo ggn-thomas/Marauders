@@ -3,11 +3,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { 
   Facebook, 
-  Twitter, 
+ 
   Instagram,
-  Mail,
   AtSign,
-  Phone,
   MapPin
 } from 'lucide-react';
 
@@ -31,8 +29,8 @@ const Footer: React.FC = () => {
               </span>
             </div>
             <p className="text-gray-300 leading-relaxed mb-4 max-w-md">
-              Club de football américain passionné, uni par l'esprit d'équipe et la détermination. 
-              Rejoignez-nous pour vivre l'expérience Marauders !
+              Club de football américain passionné, uni par l&apos;esprit d&apos;équipe et la détermination. 
+              Rejoignez-nous pour vivre l&apos;expérience Marauders !
             </p>
             <div className="flex space-x-4">
               <a 

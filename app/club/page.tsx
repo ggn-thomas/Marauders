@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
-import { MapPin, Calendar, Users, Trophy } from 'lucide-react';
+import { MapPin, Calendar } from 'lucide-react';
 
 const ClubPage: React.FC = () => {
   return (
@@ -16,7 +16,7 @@ const ClubPage: React.FC = () => {
               Le Club
             </h1>
             <p className="text-xl md:text-2xl">
-              L'histoire des Marauders
+              L&apos;histoire des Marauders
             </p>
           </div>
         </div>
@@ -39,7 +39,7 @@ const ClubPage: React.FC = () => {
                 <h3 className="text-2xl font-bold text-black">Fondé en 1995 à Roullet-Saint-Estèphe.</h3>
               </div>
               <p className="text-gray-700 mb-6 leading-relaxed">
-                L’association a été fondée en 1995 par Frédéric TANNÉ, Éric LABBÉ et Dominique CROCHARD à Roullet-Saint-Estèphe, à la suite de la disparition de la section football américain du Sporting Club Angoulême des Diables d’Angoulême.
+                L&apos;association a été fondée en 1995 par Frédéric TANNÉ, Éric LABBÉ et Dominique CROCHARD à Roullet-Saint-Estèphe, à la suite de la disparition de la section football américain du Sporting Club Angoulême des Diables d&apos;Angoulême.
                 Le club des Marauders a donc 30 ans cette année !
               </p>
               <p className="text-gray-700 mb-6 leading-relaxed">
@@ -102,7 +102,7 @@ const ClubPage: React.FC = () => {
               <h3 className="text-2xl font-bold text-black mb-2">Grégory Bordat</h3>
               <p className="text-[#d71f1c] font-semibold mb-4">Président</p>
               <p className="text-gray-700 leading-relaxed">
-                  "Ayant rejoint le club en 2012, d'abord en section Junior puis Senior, Grégory est devenu le Président du club au lancement de la saison de 2023. Au cours de sa deuxième année dans la section Sénior en D3, il a pris la place de coach en défense. Rôle qu'il a gardé pendant deux années supplémentaires avant de partir en universitaire à Bordeaux et revenir chez les Marauders en 2021." 
+                  &quot;Ayant rejoint le club en 2012, d&apos;abord en section Junior puis Senior, Grégory est devenu le Président du club au lancement de la saison de 2023. Au cours de sa deuxième année dans la section Sénior en D3, il a pris la place de coach en défense. Rôle qu&apos;il a gardé pendant deux années supplémentaires avant de partir en universitaire à Bordeaux et revenir chez les Marauders en 2021.&quot; 
               </p>
             </div>
 

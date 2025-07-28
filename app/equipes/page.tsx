@@ -156,7 +156,7 @@ const EquipesPage: React.FC = () => {
         <div className="relative z-10 flex items-center justify-center h-full">
           <div className="text-center text-white">
             <h1 className="text-4xl md:text-6xl font-bold mb-4">
-              L'Équipe
+              L&apos;Équipe
             </h1>
             <p className="text-xl md:text-2xl">
               Roster Saison 2024
@@ -228,7 +228,7 @@ const EquipesPage: React.FC = () => {
             </div>
             <div>
               <div className="text-3xl font-bold text-[#d71f1c] mb-2">10</div>
-              <div className="text-gray-300">Années d'exp.</div>
+              <div className="text-gray-300">Années d&apos;exp.</div>
             </div>
           </div>
         </div>

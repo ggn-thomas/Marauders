@@ -1,4 +1,3 @@
-import {Bebas_Neue} from 'next/font/google'
 import Link from 'next/link'
 import { ArrowRight, Users } from 'lucide-react'
 import DerniersResultats from '@/components/DerniersResultats'
@@ -16,7 +15,7 @@ export default function Home() {
       <div className="min-h-screen bg-black/40 flex items-center justify-center">
         <div className="text-center text-[#d71f1c]">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">
-            Let's go Marauders
+            Let&apos;s go Marauders
           </h1>
           <p className="text-xl md:text-2xl mb-8">
             Club de football américain

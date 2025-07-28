@@ -5,7 +5,6 @@ import Image from 'next/image';
 import { MapPin, Trophy, Calendar, Users, Star, Target } from 'lucide-react';
 
 const ChampionnatPage: React.FC = () => {
-  const [selectedClub, setSelectedClub] = useState<string | null>(null);
 
   const poules = {
     atlantiqueSud: [
@@ -102,7 +101,7 @@ const ChampionnatPage: React.FC = () => {
             </h2>
             <div className="w-24 h-1 bg-[#d71f1c] mx-auto mb-6"></div>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-              L'UFOLEP Hexagonal Challenge réunit les meilleures équipes de football américain 
+              L&apos;UFOLEP Hexagonal Challenge réunit les meilleures équipes de football américain 
               de France dans un format compétitif et convivial.
             </p>
           </div>
@@ -488,7 +487,7 @@ const ChampionnatPage: React.FC = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <p className="text-lg text-gray-700 mb-6">
-                L'UFOLEP (Union Française des Œuvres Laïques d'Éducation Physique) est une 
+                L&apos;UFOLEP (Union Française des Œuvres Laïques d&apos;Éducation Physique) est une 
                 fédération multisports qui organise des championnats dans un esprit convivial 
                 et éducatif.
               </p>

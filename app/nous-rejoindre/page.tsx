@@ -27,7 +27,7 @@ const NousRejoindreePage: React.FC = () => {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">
-              Rejoignez l'Aventure
+              Rejoignez l&apos;Aventure
             </h2>
             <div className="w-24 h-1 bg-[#d71f1c] mx-auto mb-6"></div>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
@@ -43,7 +43,7 @@ const NousRejoindreePage: React.FC = () => {
                 <div className="flex items-start">
                   <Users className="text-[#d71f1c] mr-3 mt-1" size={24} />
                   <div>
-                    <h4 className="font-semibold text-black">Esprit d'équipe</h4>
+                    <h4 className="font-semibold text-black">Esprit d&apos;équipe</h4>
                     <p className="text-gray-700">Une famille soudée de plus de 25 licenciés</p>
                   </div>
                 </div>
@@ -96,7 +96,7 @@ const NousRejoindreePage: React.FC = () => {
               <div className="text-4xl font-bold text-[#d71f1c] mb-4">
                 150€ TTC
               </div>
-              <p className="text-gray-600 text-sm mb-6">Par saison (toute l'année)</p>
+              <p className="text-gray-600 text-sm mb-6">Par saison (toute l&apos;année)</p>
               <ul className="text-left text-gray-700 space-y-2">
                 <li>• Licence UFOLEP</li>
                 <li>• Assurance</li>
@@ -114,7 +114,7 @@ const NousRejoindreePage: React.FC = () => {
               <div className="text-4xl font-bold text-[#d71f1c] mb-4">
                 120€ TTC
               </div>
-              <p className="text-gray-600 text-sm mb-6">Par saison (toute l'année)</p>
+              <p className="text-gray-600 text-sm mb-6">Par saison (toute l&apos;année)</p>
               <ul className="text-left text-gray-700 space-y-2">
                 <li>• Licence UFOLEP</li>
                 <li>• Assurance</li>
@@ -167,7 +167,7 @@ const NousRejoindreePage: React.FC = () => {
             <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-6 max-w-2xl mx-auto">
               <h4 className="font-bold text-black mb-2">💡 Bon à savoir</h4>
               <p className="text-gray-700">
-• Nous acceptons les règlements en carte bancaire (sur place), chèque (maximum 3 fois), chèques vacances ANCV, liquide, virement bancaire, virement via helloasso, ainsi que l'allocation rentrée scolaire sportive Pass'Sport.
+• Nous acceptons les règlements en carte bancaire (sur place), chèque (maximum 3 fois), chèques vacances ANCV, liquide, virement bancaire, virement via helloasso, ainsi que l&apos;allocation rentrée scolaire sportive Pass&apos;Sport.
               </p>
             </div>
           </div>
@@ -199,14 +199,14 @@ const NousRejoindreePage: React.FC = () => {
                 <div className="flex items-center p-4 bg-gray-50 rounded-lg">
                   <Users className="text-[#d71f1c] mr-4" size={24} />
                   <div>
-                    <h4 className="font-semibold text-black">Pièce d'identité</h4>
+                    <h4 className="font-semibold text-black">Pièce d&apos;identité</h4>
                     <p className="text-gray-600 text-sm">Copie recto-verso</p>
                   </div>
                 </div>
                 <div className="flex items-center p-4 bg-gray-50 rounded-lg">
                   <Euro className="text-[#d71f1c] mr-4" size={24} />
                   <div>
-                    <h4 className="font-semibold text-black">Photo d'identité</h4>
+                    <h4 className="font-semibold text-black">Photo d&apos;identité</h4>
                     <p className="text-gray-600 text-sm">Format numérique accepté</p>
                   </div>
                 </div>
@@ -215,12 +215,12 @@ const NousRejoindreePage: React.FC = () => {
 
             {/* Téléchargement */}
             <div>
-              <h3 className="text-2xl font-bold text-black mb-6">Formulaire d'inscription</h3>
+              <h3 className="text-2xl font-bold text-black mb-6">Formulaire d&apos;inscription</h3>
               <div className="bg-[#d71f1c] text-white rounded-lg p-8 text-center">
                 <Download size={48} className="mx-auto mb-4" />
                 <h4 className="text-xl font-bold mb-4">Télécharger le dossier</h4>
                 <p className="mb-6">
-                  Téléchargez le formulaire d'inscription complet au format PDF
+                  Téléchargez le formulaire d&apos;inscription complet au format PDF
                 </p>
                 <a
                   href="/documents/inscription-marauders.pdf"
@@ -299,7 +299,7 @@ const NousRejoindreePage: React.FC = () => {
               <div className="mt-8 p-6 bg-[#d71f1c] text-white rounded-lg">
                 <h4 className="text-xl font-bold mb-4">🏈 Essai gratuit</h4>
                 <p className="mb-4">
-                  Venez découvrir le football américain lors d'un entraînement d'essai !
+                  Venez découvrir le football américain lors d&apos;un entraînement d&apos;essai !
                 </p>
                 <p className="text-sm">
                   Contactez-nous pour organiser votre première séance.
