@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div>
       <div 
-        className="min-h-screen bg-cover bg-center bg-no-repeat bg-fixed"
+        className="min-h-screen bg-cover bg-center bg-no-repeat md:bg-fixed"
         style={{ backgroundImage: 'url(/background.jpg)' }}
       >
       {/* Overlay pour améliorer la lisibilité */}
