@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import Image from 'next/image';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
@@ -62,9 +62,9 @@ const PartenairesCarousel: React.FC = () => {
   const itemsPerView = 4;
   const maxIndex = Math.max(0, partenaires.length - itemsPerView);
 
-  const nextSlide = () => {
+  const nextSlide = useCallback(() => {
     setCurrentIndex(prev => prev >= maxIndex ? 0 : prev + 1);
-  };
+  }, [maxIndex]);
 
   const prevSlide = () => {
     setCurrentIndex(prev => prev <= 0 ? maxIndex : prev - 1);

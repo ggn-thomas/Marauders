@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState } from 'react';
+import React from 'react';
 import Image from 'next/image';
 import { MapPin, Trophy, Calendar, Users, Star, Target } from 'lucide-react';
 
@@ -479,7 +479,7 @@ const ChampionnatPage: React.FC = () => {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">
-              À Propos de l'UFOLEP
+              À Propos de l&apos;UFOLEP
             </h2>
             <div className="w-24 h-1 bg-[#d71f1c] mx-auto"></div>
           </div>
