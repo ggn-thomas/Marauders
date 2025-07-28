@@ -27,7 +27,7 @@ const DerniersResultats: React.FC = () => {
     {
       id: 2,
       date: '09 Mars 2024',
-      equipeAdverse: 'Aurochs de Cachors',
+      equipeAdverse: 'Aurochs de Cahors',
       scoreMarauders: 8,
       scoreAdverse: 22,
       domicile: false,
@@ -45,8 +45,8 @@ const DerniersResultats: React.FC = () => {
   ];
 
   return (
-    <section className="py-16 bg-white">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-16 bg-white overflow-hidden">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">
             Derniers Résultats
@@ -54,11 +54,11 @@ const DerniersResultats: React.FC = () => {
           <div className="w-24 h-1 bg-[#d71f1c] mx-auto"></div>
         </div>
 
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 w-full overflow-hidden">
           {matchs.map((match) => (
             <div 
               key={match.id} 
-              className="bg-black rounded-lg p-6 border border-gray-700 hover:border-[#d71f1c] transition-colors duration-300"
+              className="bg-black rounded-lg p-4 sm:p-6 border border-gray-700 hover:border-[#d71f1c] transition-colors duration-300 w-full min-w-0"
             >
               <div className="text-center">
                 <div className="text-gray-400 text-sm mb-2">{match.date}</div>
@@ -66,33 +66,35 @@ const DerniersResultats: React.FC = () => {
                   {match.domicile ? 'DOMICILE' : 'EXTÉRIEUR'}
                 </div>
                 
-                <div className="flex items-center justify-center mb-4">
-                  <div className="flex-1 text-center">
-                    <div className="text-white font-bold text-lg mb-2">Marauders</div>
+                <div className="flex items-center justify-center mb-4 min-w-0">
+                  <div className="flex-1 text-center min-w-0">
+                    <div className="text-white font-bold text-sm sm:text-lg mb-2 truncate">Marauders</div>
                   </div>
                   
-                  <div className="px-4">
-                    <div className="text-white text-xl font-bold">VS</div>
+                  <div className="px-2 sm:px-4 flex-shrink-0">
+                    <div className="text-white text-lg sm:text-xl font-bold">VS</div>
                   </div>
                   
-                  <div className="flex-1 text-center">
-                    <div className="text-white font-bold text-lg mb-2">{match.equipeAdverse}</div>
+                  <div className="flex-1 text-center min-w-0">
+                    <div className="text-white font-bold text-sm sm:text-lg mb-2 truncate" title={match.equipeAdverse}>
+                      {match.equipeAdverse}
+                    </div>
                   </div>
                 </div>
                 
                 <div className="flex items-center justify-center mb-4">
-                  <div className="w-16 text-center">
-                    <div className={`text-3xl font-bold ${match.victoire ? 'text-white' : 'text-gray-400'}`}>
+                  <div className="w-12 sm:w-16 text-center">
+                    <div className={`text-2xl sm:text-3xl font-bold ${match.victoire ? 'text-white' : 'text-gray-400'}`}>
                       {match.scoreMarauders}
                     </div>
                   </div>
                   
-                  <div className="px-4">
-                    <div className="text-white text-xl font-bold">-</div>
+                  <div className="px-3 sm:px-4">
+                    <div className="text-white text-lg sm:text-xl font-bold">-</div>
                   </div>
                   
-                  <div className="w-16 text-center">
-                    <div className={`text-3xl font-bold ${!match.victoire ? 'text-white' : 'text-gray-400'}`}>
+                  <div className="w-12 sm:w-16 text-center">
+                    <div className={`text-2xl sm:text-3xl font-bold ${!match.victoire ? 'text-white' : 'text-gray-400'}`}>
                       {match.scoreAdverse}
                     </div>
                   </div>

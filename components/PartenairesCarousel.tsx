@@ -59,8 +59,29 @@ const PartenairesCarousel: React.FC = () => {
     }
   ];
 
-  const itemsPerView = 4;
+  // Responsive items per view
+  const getItemsPerView = () => {
+    if (typeof window !== 'undefined') {
+      if (window.innerWidth < 640) return 1; // mobile: 1 item
+      if (window.innerWidth < 1024) return 2; // tablet: 2 items  
+      return 4; // desktop: 4 items
+    }
+    return 4; // default fallback
+  };
+
+  const [itemsPerView, setItemsPerView] = useState(4);
   const maxIndex = Math.max(0, partenaires.length - itemsPerView);
+
+  useEffect(() => {
+    const updateItemsPerView = () => {
+      setItemsPerView(getItemsPerView());
+    };
+    
+    updateItemsPerView();
+    window.addEventListener('resize', updateItemsPerView);
+    
+    return () => window.removeEventListener('resize', updateItemsPerView);
+  }, []);
 
   const nextSlide = useCallback(() => {
     setCurrentIndex(prev => prev >= maxIndex ? 0 : prev + 1);
@@ -90,11 +111,11 @@ const PartenairesCarousel: React.FC = () => {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
             </svg>
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-black mb-6">
+          <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-black mb-6">
             Nos <span className="text-[#d71f1c]">Partenaires</span>
           </h2>
           <div className="w-32 h-1 bg-gradient-to-r from-[#d71f1c] to-black mx-auto mb-6"></div>
-          <p className="text-gray-600 text-xl max-w-2xl mx-auto leading-relaxed">
+          <p className="text-gray-600 text-base sm:text-lg lg:text-xl max-w-2xl mx-auto leading-relaxed">
             <strong>Ils croient en notre vision</strong> et nous accompagnent dans notre passion pour le football américain
           </p>
         </div>
@@ -108,9 +129,9 @@ const PartenairesCarousel: React.FC = () => {
               {partenaires.map((partenaire) => (
                 <div
                   key={partenaire.id}
-                  className="flex-shrink-0 w-1/4 px-4"
+                  className="flex-shrink-0 w-full sm:w-1/2 lg:w-1/4 px-2 sm:px-4"
                 >
-                  <div className="bg-white rounded-xl p-8 h-36 flex items-center justify-center group hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 border border-gray-100 hover:border-[#d71f1c]/20">
+                  <div className="bg-white rounded-xl p-4 sm:p-6 lg:p-8 h-24 sm:h-32 lg:h-36 flex items-center justify-center group hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 border border-gray-100 hover:border-[#d71f1c]/20">
                     {partenaire.url ? (
                       <a 
                         href={partenaire.url}
@@ -152,16 +173,16 @@ const PartenairesCarousel: React.FC = () => {
           {/* Navigation buttons */}
           <button
             onClick={prevSlide}
-            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-6 bg-white hover:bg-[#d71f1c] text-[#d71f1c] hover:text-white p-3 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 z-10 border border-gray-200 hover:scale-110"
+            className="absolute left-2 sm:left-0 top-1/2 -translate-y-1/2 sm:-translate-x-6 bg-white hover:bg-[#d71f1c] text-[#d71f1c] hover:text-white p-2 sm:p-3 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 z-10 border border-gray-200 hover:scale-110"
           >
-            <ChevronLeft size={24} />
+            <ChevronLeft size={20} className="sm:w-6 sm:h-6" />
           </button>
           
           <button
             onClick={nextSlide}
-            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-6 bg-white hover:bg-[#d71f1c] text-[#d71f1c] hover:text-white p-3 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 z-10 border border-gray-200 hover:scale-110"
+            className="absolute right-2 sm:right-0 top-1/2 -translate-y-1/2 sm:translate-x-6 bg-white hover:bg-[#d71f1c] text-[#d71f1c] hover:text-white p-2 sm:p-3 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 z-10 border border-gray-200 hover:scale-110"
           >
-            <ChevronRight size={24} />
+            <ChevronRight size={20} className="sm:w-6 sm:h-6" />
           </button>
         </div>
 
