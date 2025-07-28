@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState } from 'react';
-import { Menu, X } from 'lucide-react';
+import { MoreVertical, X } from 'lucide-react';
 import Image from 'next/image';
 
 const Navbar: React.FC = () => {
@@ -52,12 +52,12 @@ const Navbar: React.FC = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-white/90 hover:text-white hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              className="inline-flex items-center justify-center p-3 rounded-md text-white hover:text-white hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white/50 transition-all duration-200"
             >
               {isMenuOpen ? (
                 <X className="block h-6 w-6" />
               ) : (
-                <Menu className="block h-6 w-6" />
+                <MoreVertical className="block h-6 w-6" />
               )}
             </button>
           </div>
